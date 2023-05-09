@@ -1,18 +1,17 @@
 <!-- docs/_sidebar.md -->
 
 - SpellBook
-  - [What is SpellBook?](/)
-  - [Philosophy & Principles](/)
-  - [Vision & Value](/)
-  - [Roadmap 2022 - 2023](/)
-  - [Release Notes](/)
+  - [What is SpellBook?](spellbook/whatis.md)
+  - [Philosophy & Principles](spellbook/principles.md)
+  - [Vision & Value](spellbook/vision.md)
+  - [Roadmap 2022 - 2023](spellbook/roadmap.md)
+  - [Release Notes](spellbook/releasenotes.md)
 
 - Guidance
-  - [First Steps](guide.md)
-  - [Four Elements]()
+  - [First Steps](guidance/guide.md)
+  - [Collections](guidance/collections.md)
+  - [Four Elements](guidance/four_elements.md)
   - [Seven Planets]()
-  - [Collections]()
-  - [Using ]()
   - [Feed Algorithms]()
   - [Journey & Quests]()
   - [Planting Trees]()
@@ -29,7 +28,7 @@
   - [Credits & License Use]()
 
 - Contributing
-  - [App Coding]()
+  - [Open Source]()
   - [Content Creation]()
   - [Business Development]()
   - [Invest]()

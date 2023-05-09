@@ -1,6 +1,6 @@
 <!-- _coverpage.md -->
 
-![logo](media/icon_transparent.png ':size=10%')
+![logo](media/icon_transparent.png ':size=20%')
 
 # SpellBook <small>1.4.0</small>
 
