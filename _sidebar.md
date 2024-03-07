@@ -1,31 +1,35 @@
 <!-- docs/_sidebar.md -->
 
-- SpellBook
-  - [What is SpellBook?](spellbook/whatis.md)
-  - [Philosophy & Principles](spellbook/principles.md)
-  - [Vision & Value](spellbook/vision.md)
-  - [Roadmap 2022 - 2023](spellbook/roadmap.md)
-  - [Release Notes](spellbook/releasenotes.md)
+- QQuill
+  - [What is QQuill?](qquill/whatis.md)
+  - [Philosophy & Principles](qquill/principles.md)
+  - [Vision & Value](qquill/vision.md)
+  - [Roadmap 2022 - 2023](qquill/roadmap.md)
+  - [Release Notes](qquill/releasenotes.md)
 
 - Guidance
-  - [First Steps](guidance/guide.md)
+  - [First Steps in QQuill](guidance/guide.md)
   - [Collections](guidance/collections.md)
   - [Four Elements](guidance/four_elements.md)
-  - [Seven Planets]()
-  - [Feed Algorithms]()
+  - [Seven Planets](guidance/seven_planets.md)
+  - [Feed Algorithms](guidance/feedalgorithm.md)
   - [Journey & Quests]()
-  - [Planting Trees]()
-  - [1-on-1 Coaching]()
+  - [Trees & Projects]()
+  - [Calendars & Moons]()
+  - [Your Data]()
+  - [The Great Work]()
 
 - Technical Documentation
   - [Business Architecture]()
   - [Information Architecture]()
-  - [App & Data Architecture]()
+  - [QQuill API](archtech/qquill_api.md)
+  - [App Architecture]()
+  - [The Feed Algorithms]()
   - [Offline-First]()
-  - [Encryption]()
-  - [Potential Cloud Providers]()
-  - [SpellBook Licensing]()
-  - [Credits & License Use]()
+  - [Private & Public Data](archtech/private_public_data.md)
+  - [Used Cloud Elements]()
+  - [QQuill Licensing]()
+  - [Credits & Licenses]()
 
 - Contributing
   - [Open Source]()

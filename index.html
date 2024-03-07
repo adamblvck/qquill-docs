@@ -1,42 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Description">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 
-  <!-- Theme: Simple (light + dark) -->
-  <!-- <link rel="stylesheet" media="(prefers-color-scheme: light)" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"> -->
-  <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css" />
+	<link rel="stylesheet" href="./custom.css" />
+	<link rel="icon" href="favicon.ico" />
 
+	<link 
+		rel="stylesheet"
+		href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/style.min.css"
+		title="docsify-darklight-theme"
+		type="text/css"
+	/>
 
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+    	window.$docsify = {
+			name: 'QQuill Docs',
+			nameLink: '/',
+			coverpage: true,
+			logo: './media/QQuill_small_title.png',
+			repo: 'https://github.com/gene-keys/archtech-docs',
+			loadSidebar: true,
 
-</head>
-<body>
-  <div id="app"></div>
+			maxLevel: 5,
+			subMaxLevel: 3,
+			themeColor: '#12151A',
+			
+			themeable: {
+				readyTransition : true, // default
+				responsiveTables: true  // default
+			},
 
+			darklightTheme: {
+				siteFont : "Nunito",
+				defaultTheme : 'light',
+				codeFontFamily : 'Roboto Mono, Monaco, courier, monospace',
+				bodyFontSize : '17px',
+				dark: {
+					accent: '#E04A16',
+					toogleBackground : '#ffffff',
+					background: '#1F252B',
+					textColor: '#FFF3E3',
+					// codeTextColor : '#ffffff',
+					// codeBackgroundColor : '#0e2233',
+					borderColor : '#78A6C8',
+					blockQuoteColor : '#858585',
+					highlightColor : '#d22778',
+					sidebarSublink : '#FFF3E3',
+					// codeTypeColor : '#ffffff',
+					coverBackground : 'linear-gradient(to bottom, 1F252B 0%, 12151A 100%)',
+					toogleImage : 'url(https://cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/icons/sun.svg)'
+				},
+				light: {
+					accent: '#8667a5',
+					toogleBackground : '#091a28',
+					background: '#ffffff',
+					textColor: '#34495e',
+					codeTextColor : '#525252',
+					codeBackgroundColor : '#f8f8f8',
+					borderColor : 'rgba(0, 0, 0, 0.07)',
+					blockQuoteColor : '#858585',
+					highlightColor : '#d22778',
+					sidebarSublink : '#34495e',
+					codeTypeColor : '#091a28',
+					coverBackground : 'linear-gradient(to left bottom, hsl(218, 15%, 20%) 0%,hsl(218, 25%, 10%) 100%)',
+					toogleImage : 'url(https://cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/icons/moon.svg)'
+				}
+			},
+			// complete configuration parameters
+			search: {
+				// maxAge: 86400000, // Expiration time, the default one day
+				// paths: [], // or 'auto'
+				paths: 'auto', // or 'auto'
+				placeholder: 'Type to search',
 
-  <script>
-    window.$docsify = {
-      name: '',
-      repo: '',
-      coverpage: true,
-      logo: './media/icon_transparent.png',
-      loadSidebar: true,
+				noData: 'No Results!',
 
-      themeable: {
-          readyTransition : true, // default
-          responsiveTables: true  // default
-      }
-    }
-  </script>
-  <!-- Docsify v4 -->
-  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+				// Headline depth, 1 - 6
+				depth: 8,
 
-  <!-- docsify-themeable -->
-  <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
+				hideOtherSidebarContent: false, // whether or not to hide other sidebar content	
+			},
+     	}
+    </script>
+    
+    <!-- Docsify v4 -->
+		<script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
 
-</body>
+		<!-- Search -->
+		<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+
+		<!-- Zoomable image -->
+		<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+
+		<!-- Mermaid - Advanced Charting in Markdown -->
+		<script type="module">
+			import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+			mermaid.initialize({ startOnLoad: true });
+			window.mermaid = mermaid;
+		  </script>
+		  <script src="//unpkg.com/docsify-mermaid@2.0.0/dist/docsify-mermaid.js"></script>
+
+		<!-- Docsify Dark Theme -->
+		<script 
+			src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js"
+			type="text/javascript">
+		</script>
+
+		<script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+		<script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>
+		<script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-javascript.min.js"></script>
+
+  </body>
 </html>

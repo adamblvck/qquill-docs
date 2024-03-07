@@ -1,0 +1,43 @@
+/* Cover Title Coloring */
+.cover .cover-main span,
+.cover .cover-main p {
+	color: #FFF3E3 !important;
+}
+
+/* Sidebar Icon Size */
+.sidebar img {
+	height: 100px;
+}
+
+.app-name {
+	margin-bottom: 0px !important;
+}
+
+.sidebar-nav > #archtech-docs {
+	display: flex;
+	justify-content: center;
+}
+
+.sidebar-nav > h2, p {
+	margin-left: 10px !important;
+}
+
+li > p {
+	margin: 0px !important;
+}
+
+img {
+	border-radius: 10px;
+}
+
+.markdown-section h3 span {
+	font-weight: 300;
+	font-style: italic;
+}
+
+.app-sub-sidebar li:before {
+	content: '·' !important;
+	padding-right: 7px !important;
+}
+
+
